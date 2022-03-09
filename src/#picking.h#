@@ -1,0 +1,81 @@
+kj//
+// Created by pat on 4/7/21.
+//
+
+#ifndef GLENGINE_PICKING_H
+#define GLENGINE_PICKING_H
+int pick(Shader pickingshader, Camera camera, vector<object*> objects, int x, int y, int SCR_WIDTH, int SCR_HEIGHT){
+    // Clear the screen in white
+    glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    pickingshader.use();
+    // Only the positions are needed (not the UVs and normals)
+    glEnableVertexAttribArray(0);
+    glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 1000.0f);
+
+    glm::mat4 view = camera.GetViewMatrix();
+    for (auto z: objects){
+
+        //glm::mat4 ModelMatrix = glm::scale(glm::mat4(1), glm::vec3(0.1f));	// it's a bit too big for our scene, so scale it down
+        glm::mat4 ModelMatrix = glm::translate(glm::mat4(1), z->getPosition()); // translate it down so it's at the center of the scene
+        ModelMatrix = glm::scale(ModelMatrix, glm::vec3(.1));	// it's a bit too big for our scene, so scale it down
+
+        glm::mat4 MVP = projection * view * ModelMatrix;
+
+        // Send our transformation to the currently bound shader,
+        // in the "MVP" uniform
+        pickingshader.setMat4("MVP",MVP);
+        // Convert "i", the integer mesh ID, into an RGB color
+        int id=z->id;
+        int r = (id & 0x000000FF) >>  0;
+        int g = (id & 0x0000FF00) >>  8;
+        int b = (id & 0x00FF0000) >> 16;
+
+        // OpenGL expects colors to be in [0,1], so divide by 255.
+        pickingshader.setVec4("PickingColor", r/255.0f, g/255.0f, b/255.0f, 1.0f);
+        // 1rst attribute buffer : vertices
+        z->Draw(pickingshader);
+    }
+    //nanosuit->Draw(pickingshader);
+
+
+
+    // Wait until all the pending drawing commands are really done.
+    // Ultra-mega-over slow !
+    // There are usually a long time between glDrawElements() and
+    // all the fragments completely rasterized.
+    glFlush();
+    glFinish();
+
+
+    glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
+
+    // Read the pixel at the center of the screen.
+    // You can also use glfwGetMousePos().
+    // Ultra-mega-over slow too, even for 1 pixel,
+    // because the framebuffer is on the GPU.
+    unsigned char data[4];
+    //glReadPixels(SCR_WIDTH/2, SCR_HEIGHT/2,1,1, GL_RGBA, GL_UNSIGNED_BYTE, data);
+    glReadPixels(x, SCR_HEIGHT-y,1,1, GL_RGBA, GL_UNSIGNED_BYTE, data);
+
+    // Convert the color back to an integer ID
+    int pickedID =
+            data[0] +
+            data[1] * 256 +
+            data[2] * 256*256;
+
+    if (pickedID == 0x00ffffff){ // Full white, must be the background !
+        //message = "background";
+    }else{
+        std::ostringstream oss;
+        oss << "mesh " << pickedID;
+        //message = oss.str();
+    }
+    cout<<pickedID<<endl;
+
+    // Uncomment these lines to see the picking shader in effect
+    //glfwSwapBuffers(window);
+    //continue; // skips the normal rendering
+    return pickedID;
+}
+#endif //GLENGINE_PICKING_H

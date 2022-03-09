@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="zip"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\zip\;CMake Files\zip\cmake\;CMake Files\zip\test\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="zip">
+				<Option output="C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/libzip.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/Pat/CLionProjects/z80/include"/>
+					<Add directory="C:/Users/Pat/CLionProjects/z80/zip"/>
+					<Add directory="C:/Users/Pat/CLionProjects/z80/zip/src"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/Makefile&quot;  VERBOSE=1 zip"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="zip/fast">
+				<Option output="C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/libzip.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/Pat/CLionProjects/z80/include"/>
+					<Add directory="C:/Users/Pat/CLionProjects/z80/zip"/>
+					<Add directory="C:/Users/Pat/CLionProjects/z80/zip/src"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/Makefile&quot;  VERBOSE=1 zip/fast"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="uninstall">
+				<Option working_dir="C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/Makefile&quot;  VERBOSE=1 uninstall"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test.out">
+				<Option output="C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/test/test.out.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/Pat/CLionProjects/z80/include"/>
+					<Add directory="C:/Users/Pat/CLionProjects/z80/zip"/>
+					<Add directory="C:/Users/Pat/CLionProjects/z80/zip/src"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/test/Makefile&quot;  VERBOSE=1 test.out"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test.out/fast">
+				<Option output="C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/test/test.out.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/Pat/CLionProjects/z80/include"/>
+					<Add directory="C:/Users/Pat/CLionProjects/z80/zip"/>
+					<Add directory="C:/Users/Pat/CLionProjects/z80/zip/src"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/test/Makefile&quot;  VERBOSE=1 test.out/fast"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_miniz.out">
+				<Option output="C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/test/test_miniz.out.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/Pat/CLionProjects/z80/include"/>
+					<Add directory="C:/Users/Pat/CLionProjects/z80/zip"/>
+					<Add directory="C:/Users/Pat/CLionProjects/z80/zip/src"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/test/Makefile&quot;  VERBOSE=1 test_miniz.out"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_miniz.out/fast">
+				<Option output="C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/test/test_miniz.out.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/Pat/CLionProjects/z80/include"/>
+					<Add directory="C:/Users/Pat/CLionProjects/z80/zip"/>
+					<Add directory="C:/Users/Pat/CLionProjects/z80/zip/src"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/test/Makefile&quot;  VERBOSE=1 test_miniz.out/fast"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Pat/CLionProjects/z80/cmake-build-debug/zip/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/Pat/CLionProjects/z80/zip/src/miniz.h">
+			<Option target="zip"/>
+		</Unit>
+		<Unit filename="C:/Users/Pat/CLionProjects/z80/zip/src/zip.c">
+			<Option target="zip"/>
+		</Unit>
+		<Unit filename="C:/Users/Pat/CLionProjects/z80/zip/src/zip.h">
+			<Option target="zip"/>
+		</Unit>
+		<Unit filename="C:/Users/Pat/CLionProjects/z80/zip/test/test.c">
+			<Option target="test.out"/>
+		</Unit>
+		<Unit filename="C:/Users/Pat/CLionProjects/z80/zip/test/test_miniz.c">
+			<Option target="test_miniz.out"/>
+		</Unit>
+		<Unit filename="C:/Users/Pat/CLionProjects/z80/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/Pat/CLionProjects/z80/zip/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\zip\"/>
+		</Unit>
+		<Unit filename="C:/Users/Pat/CLionProjects/z80/zip/cmake/Config.cmake.in">
+			<Option virtualFolder="CMake Files\zip\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/Pat/CLionProjects/z80/zip/cmake/FindASan.cmake">
+			<Option virtualFolder="CMake Files\zip\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/Pat/CLionProjects/z80/zip/cmake/FindMSan.cmake">
+			<Option virtualFolder="CMake Files\zip\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/Pat/CLionProjects/z80/zip/cmake/FindSanitizers.cmake">
+			<Option virtualFolder="CMake Files\zip\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/Pat/CLionProjects/z80/zip/cmake/FindTSan.cmake">
+			<Option virtualFolder="CMake Files\zip\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/Pat/CLionProjects/z80/zip/cmake/FindUBSan.cmake">
+			<Option virtualFolder="CMake Files\zip\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/Pat/CLionProjects/z80/zip/cmake/cmake_uninstall.cmake.in">
+			<Option virtualFolder="CMake Files\zip\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/Pat/CLionProjects/z80/zip/cmake/sanitize-helpers.cmake">
+			<Option virtualFolder="CMake Files\zip\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/Pat/CLionProjects/z80/zip/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\zip\test\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
